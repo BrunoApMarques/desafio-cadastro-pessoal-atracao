@@ -14,7 +14,7 @@
 <body>
   <!--Inicio Formulário-->  
   <main>
-      <h2>Cadastro Pessoal - Itaú</h2>
+      <h2>Cadastro Pessoal <img  class="imagemLogo" src="imagens/logo.png" ></h2>
       <form name="formulario" action="envio.html" id="formulario" onsubmit="cadastrar()">
         <div class="form-login">
             <label for="nome">Nome Completo:</label>
@@ -38,9 +38,12 @@
             <input type="text" id="bairro" placeholder="Digite seu bairro"><br>
             <label for="cidade">Cidade: </label>
             <input type="text" id="cidade" placeholder="Digite a sua cidade"><br>
-            <label for="estado">Estado: </label>
-            <input type="text" id="estado" placeholder="Digite seu estado"><br>
-            <label for="cep">CEP: </label>
+            <label>Estado:</label>
+            <select nome="estado" id="estado">
+            <option value="vazio"></option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <label for="cep">CEP:</label>
             <input type="text" id="cep" placeholder=" 00000-000" maxlength="9"><br>
             <label for="telefonefixo">Telefone Fixo: </label>
             <input type="text" id="telefonefixo" placeholder=" (xx) xxxx-xxxx" maxlength="10"><br>
