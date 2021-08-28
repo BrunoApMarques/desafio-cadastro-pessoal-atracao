@@ -1,6 +1,6 @@
 //*Funçao de Validação*//
 
-function_cpf(cpf) {
+function _cpf(cpf) {
     cpf = cpf.replace(/[^\d]+/g,'');
 
     if (cpf == '') return false;
