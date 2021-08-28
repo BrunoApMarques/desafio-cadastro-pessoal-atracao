@@ -1,4 +1,4 @@
-//*Funçao de Validação*//
+//Funçao  Validação//
 
 function _cpf(cpf) {
     cpf = cpf.replace(/[^\d]+/g,'');
@@ -37,10 +37,20 @@ function _cpf(cpf) {
         return true;
 }
 
-// * Aqui apresenta que não foi valido o CPF, alerta a mensagem, em seguida e limpa o valor * //
+// Apresenta que CPF não é valido, alerta a mensagem, em seguida e limpa o valor //
 function validarCPF(cpf){
     if( !_cpf(cpf.value)){
         alert("CPF inválido!");
         cpf.value = "";
+    }
+}
+
+//Botão Cadastrar,recebe mensagem diz que foi cadastrado e mostra a página do site cadastrado com sucesso// 
+function Cadastrar() {
+    location.href="envio.html"
+    var nome = document.getElementById("nome")
+
+    if (nome.value != "") {
+        alert(nome.value + ',' + 'cadastrado!');
     }
 }

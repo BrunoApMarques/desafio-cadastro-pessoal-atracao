@@ -1,20 +1,20 @@
 /* Corpo do Site */
 body {
-  background-image: url("imagens/praia-por-do-sol.jpg");
-  font-family:sans-serif;
-  font-weight:bold;
   margin: 0;
   padding: 0;
+  background-image: url("imagens/praia-por-do-sol.jpg");
+  font-family:sans-serif;
+  font-weight:bold; 
 }
 /*Tamanho de letra, fonte,cor e tamanho do corpo do Site*/
 h2 {
   color: #EC7000;
   text-align: center;
   font-size: 30px;
-  padding: 20px;
+  padding: 10px;
   margin-right: 30px;
 }
-/*Tela de Cadastro: configuração de espaço, localização, tela, bordas, cor, tamanho*/
+/*Tela de cadastro configuração de espaço, localização, tela, bordas, cor, tamanho*/
 .form-login {
   background-image: linear-gradient(45deg, #FF7200, #e57011);
   display: inline-block;
@@ -24,7 +24,7 @@ h2 {
   border-top: 2px solid;
   border-bottom: 3px solid;
   letter-spacing: inherit;
-  line-height: 28px;
+  line-height: 24px;
   text-align: justify;
 }
 /*Centralizar, tamanho de letra e cor na tela do Cadastro*/
@@ -41,7 +41,7 @@ input {
   border:black 1px solid;
   border-radius: 20px;
   width: 240px;
-  font-size: 15px;
+  font-size: 16px;
 }
 /*Configuração de botão de cadastrar e limpar */
 .botao, button {
@@ -69,17 +69,19 @@ footer {
   font-size: 28px;
   color: black;
   width: 100%;
-  height: 17%;
+  height: 1%;
   border-radius: 55px;
-  bottom: 3px;
+  bottom: 2px;
 }
 /*Tela de envio cadastro com sucesso*/
-.envio{
+.envio {
   display: table-cell;
   text-align: center;
   width: 20%;
 }
 /**/
-.imagemLogo{
+.imagemLogo {
   width: 5%;
+  
 }
+
