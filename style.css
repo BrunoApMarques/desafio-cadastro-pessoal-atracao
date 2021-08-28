@@ -40,7 +40,7 @@ main {
 input {
   border:black 1px solid;
   border-radius: 20px;
-  width: 240px;
+  width: 250px;
   font-size: 16px;
 }
 /*Configuração de botão de cadastrar e limpar */
