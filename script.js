@@ -1,14 +1,16 @@
+//função validaform faz o mapeando dos campos do form,caso esteja vazio retorna um alert (campos não preenchido) 
 function validarForm() {
-    let x = document.forms["validaForm"].value;
-    if (x == "") {
-        alert("Campo de mensagem não preenchido!");
+    let validador = document.forms["validaForm"].value;
+    if (validador == "") {
+        alert("Campos não preenchido!");
         return false;
     }
 }
-
-function _cpf(cpf) 
-{
-    cpf = cpf.replace(/[^\d]+/g, '');
+//função valicpf faz validação dos caracteries do campo cpf
+function validaCpf(cpf)
+{  
+//variavel cpfV aguarda objetos via teclado a qual fará comparação dos caracteries, cujo metado replace cambea os objetos devido expressao regular passado no parametro
+    cpfV = cpf.replace(/[^\d]+/g, '');
 
     if (cpf == '') return false;
 
@@ -55,18 +57,18 @@ function _cpf(cpf)
     return true;
 }
 
-// Apresenta que CPF não é valido, alerta a mensagem, em seguida e limpa o valor
+// Apresenta que CPF não é valido, alerta a mensagem, em seguida
 function validarCPF(cpf) 
 {
-    if (!_cpf(cpf.value)) 
+    if (!validaCpf(cpf.value))
     {
         alert("CPF inválido!");
         cpf.value = "";
     }
 }
 
-// *
-const cadastro = document.getElementById('formulario')
+
+const cadastro = document.getElementById('form-cadastro')
 
 cadastro.addEventListener('submit', function (e) 
 {
