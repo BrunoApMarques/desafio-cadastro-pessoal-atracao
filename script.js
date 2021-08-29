@@ -1,4 +1,10 @@
-// Funçao  Validação
+function validarForm() {
+    let x = document.forms["validaForm"]["messagem"].value;
+    if (x == "") {
+        alert("Campo de mensagem não preenchido!");
+        return false;
+    }
+}
 
 function _cpf(cpf) 
 {
