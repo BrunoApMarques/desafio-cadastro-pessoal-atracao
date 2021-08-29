@@ -65,19 +65,6 @@ function validarCPF(cpf)
     }
 }
 
-// Botão Cadastrar, recebe mensagem diz que foi cadastrado e mostra a página do site cadastrado com sucesso
-function cadastrar() 
-{
-    window.location.href = "envio.html";
-    const nome = document.getElementById("nome");
-
-    if (nome.value != "") 
-    {
-        alert(nome.value + ',' + 'cadastrado!');
-    }
-}
-
-
 // *
 const cadastro = document.getElementById('formulario')
 
