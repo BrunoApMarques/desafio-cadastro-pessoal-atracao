@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* Expandir a altura de html e body para que o rodapéé possa mover-se para o canto inferior fundo */
+/* Expandir a altura de html e body para que o rodapé possa mover-se para o canto inferior fundo */
 html, body
 {
     height: 100%;   
