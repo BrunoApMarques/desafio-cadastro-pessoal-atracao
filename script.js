@@ -46,11 +46,39 @@ function validarCPF(cpf){
 }
 
 //Botão Cadastrar,recebe mensagem diz que foi cadastrado e mostra a página do site cadastrado com sucesso// 
-function Cadastrar() {
+function cadastrar() {
     location.href="envio.html"
-    var nome = document.getElementById("nome")
+    var nome = document.getElementById("nome");
 
     if (nome.value != "") {
         alert(nome.value + ',' + 'cadastrado!');
     }
 }
+
+
+// *//
+const cadastro = document.getElementById('formulario')
+
+cadastro.addEventListener('submit', function(e){
+    e.preventDefault()
+    let nome = document.getElementById('nome').value;
+    let cpf = document.getElementById('cpf').value;
+    let rg = document.getElementById('rg').value;
+    let sexo = document.getElementById('sexo').value;
+    let endereco = document.getElementById('endereco').value;
+    let numero = document.getElementById('numero').value;
+    let bairro = document.getElementById('bairro').value;
+    let cidade = document.getElementById('cidade').value;
+    let estado = document.getElementById('estado').value;
+    let cep = document.getElementById('cep').value;
+    let telefonefixo = document.getElementById('telefonefixo').value;
+    let telefonecelular = document.getElementById('telefonecelular').value;
+
+ }).then( response =>{
+        if (response.status === 200) {
+            alert('Cadastrado com sucesso');
+        }else {
+            alert("ERROR")   
+        }
+    })
+    
